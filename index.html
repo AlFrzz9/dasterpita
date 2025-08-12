@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daster Lowo Motif Pita Busui Premium | Fashion Elegance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #36454F;
+            scroll-behavior: smooth;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-rose-gold {
+            background-color: #D4AF37;
+        }
+        .text-rose-gold {
+            color: #D4AF37;
+        }
+        .border-rose-gold {
+            border-color: #D4AF37;
+        }
+        .bg-cream {
+            background-color: #F5F5DC;
+        }
+        .bg-charcoal {
+            background-color: #36454F;
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        .testimonial-card {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            transform: translateY(-5px);
+        }
+        .sticky-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .size-guide-modal {
+            display: none;
+            position: fixed;
+            z-index: 200;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 30px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover {
+            color: black;
+        }
+        .floating-button {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            z-index: 99;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        .floating-button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-cream">
+    <!-- Navigation -->
+    <nav class="bg-white bg-opacity-90 fixed w-full z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl heading-font text-rose-gold font-bold">DasterLowo</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-charcoal hover:text-rose-gold transition">Keunggulan</a>
+                    <a href="#gallery" class="text-charcoal hover:text-rose-gold transition">Galeri</a>
+                    <a href="#testimonials" class="text-charcoal hover:text-rose-gold transition">Testimoni</a>
+                    <a href="#order" class="text-charcoal hover:text-rose-gold transition">Pesan</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6 text-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 fade-in">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold heading-font mb-6">Tampil Percaya Diri dengan Style Premium yang Memukau</h1>
+                    <p class="text-lg mb-8">Daster Lowo Motif Pita Busui Premium - Kombinasi sempurna antara kenyamanan dan gaya untuk wanita modern.</p>
+                    <a href="#order" class="bg-rose-gold hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">PESAN SEKARANG</a>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="relative overflow-hidden rounded-xl shadow-xl">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0g-mcrzya1oscdxb4.webp" alt="Daster Lowo Motif Pita Busui Premium" class="w-full h-auto hover-scale">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
+                            <div class="text-white">
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 text-yellow-400 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                    </svg>
+                                    <span class="font-bold">4.9/5</span>
+                                    <span class="mx-2">|</span>
+                                    <span>⭐ 1,258+ Reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white fade-in">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold heading-font mb-4">Keunggulan Daster Lowo Premium</h2>
+                <div class="w-24 h-1 bg-rose-gold mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 hover-scale">
+                    <div class="bg-cream w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-rose-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold heading-font mb-2">Premium Quality Materials</h3>
+                    <p class="text-gray-600">Bahan berkualitas tinggi yang nyaman dan tahan lama, memberikan sentuhan mewah setiap kali dipakai.</p>
+                </div>
+                <div class="text-center p-6 hover-scale">
+                    <div class="bg-cream w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-rose-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold heading-font mb-2">Trendy Indonesian Fashion</h3>
+                    <p class="text-gray-600">Desain mengikuti tren fashion terkini untuk wanita Indonesia, selalu up-to-date dengan gaya terkini.</p>
+                </div>
+                <div class="text-center p-6 hover-scale">
+                    <div class="bg-cream w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-rose-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold heading-font mb-2">Perfect Fit & Comfort</h3>
+                    <p class="text-gray-600">Cutting sempurna yang mengikuti lekuk tubuh dengan nyaman, memberikan kebebasan bergerak tanpa mengorbankan gaya.</p>
+                </div>
+                <div class="text-center p-6 hover-scale">
+                    <div class="bg-cream w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-rose-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold heading-font mb-2">Instagram-Perfect Style</h3>
+                    <p class="text-gray-600">Tampilan yang sempurna untuk OOTD dan acara special, membuat Anda selalu siap untuk setiap momen berharga.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-cream fade-in">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold heading-font mb-4">Galeri Inspirasi OOTD</h2>
+                <div class="w-24 h-1 bg-rose-gold mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-xl shadow-lg hover-scale">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0g-mcw3vhtxnqc889.webp" alt="Daster Lowo Motif Pita 1" class="w-full h-auto transition duration-500 hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg hover-scale">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0u-mcw3vnsf93jwa1.webp" alt="Daster Lowo Motif Pita 2" class="w-full h-auto transition duration-500 hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg hover-scale">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0t-mcw3vt770twked.webp" alt="Daster Lowo Motif Pita 3" class="w-full h-auto transition duration-500 hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg hover-scale">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0i-mcw3vxyod4tx97.webp" alt="Daster Lowo Motif Pita 4" class="w-full h-auto transition duration-500 hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg hover-scale">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0o-mcw3w2rt0j6g82.webp" alt="Daster Lowo Motif Pita 5" class="w-full h-auto transition duration-500 hover:scale-105">
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col justify-center">
+                    <h3 class="text-xl font-bold heading-font mb-4 text-center">Temukan Style Anda</h3>
+                    <p class="text-gray-600 mb-6 text-center">Daster Lowo Motif Pita hadir dengan berbagai cara styling untuk berbagai kesempatan.</p>
+                    <button onclick="openSizeGuide()" class="border-2 border-rose-gold text-rose-gold font-bold py-2 px-6 rounded-full transition duration-300 hover:bg-rose-gold hover:text-white mx-auto">Panduan Ukuran</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Size Guide Modal -->
+    <div id="sizeGuideModal" class="size-guide-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSizeGuide()">&times;</span>
+            <h2 class="text-2xl font-bold heading-font mb-6 text-center">Panduan Ukuran</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-rose-gold text-white">
+                            <th class="p-3 font-bold uppercase">Ukuran</th>
+                            <th class="p-3 font-bold uppercase">Bust (cm)</th>
+                            <th class="p-3 font-bold uppercase">Waist (cm)</th>
+                            <th class="p-3 font-bold uppercase">Hip (cm)</th>
+                            <th class="p-3 font-bold uppercase">Length (cm)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">S</td>
+                            <td class="p-3">84-88</td>
+                            <td class="p-3">66-70</td>
+                            <td class="p-3">90-94</td>
+                            <td class="p-3">120</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">M</td>
+                            <td class="p-3">88-92</td>
+                            <td class="p-3">70-74</td>
+                            <td class="p-3">94-98</td>
+                            <td class="p-3">122</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">L</td>
+                            <td class="p-3">92-96</td>
+                            <td class="p-3">74-78</td>
+                            <td class="p-3">98-102</td>
+                            <td class="p-3">124</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="p-3">XL</td>
+                            <td class="p-3">96-100</td>
+                            <td class="p-3">78-82</td>
+                            <td class="p-3">102-106</td>
+                            <td class="p-3">126</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-6 text-sm text-gray-600">
+                <p class="mb-2">* Ukuran dapat bervariasi ±2cm tergantung cara pengukuran.</p>
+                <p>* Untuk hasil terbaik, ukur tubuh Anda dengan pita ukur sebelum memesan.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white fade-in">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold heading-font mb-4">Apa Kata Mereka?</h2>
+                <div class="w-24 h-1 bg-rose-gold mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-rose-gold flex items-center justify-center text-white font-bold mr-4">SR</div>
+                        <div>
+                            <h4 class="font-bold">Sinta R.</h4>
+                            <div class="flex">
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Bahannya premium banget! Nyaman dipakai seharian dan modelnya bikin pede. Worth it!"</p>
+                    <div class="mt-4 text-sm text-gray-500">Jakarta</div>
+                </div>
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-rose-gold flex items-center justify-center text-white font-bold mr-4">MD</div>
+                        <div>
+                            <h4 class="font-bold">Maya D.</h4>
+                            <div class="flex">
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Kualitas jahitan rapi, bahan tidak mudah kusut. Cocok untuk acara formal maupun casual."</p>
+                    <div class="mt-4 text-sm text-gray-500">Surabaya</div>
+                </div>
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-rose-gold flex items-center justify-center text-white font-bold mr-4">LS</div>
+                        <div>
+                            <h4 class="font-bold">Lina S.</h4>
+                            <div class="flex">
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.� 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Ukurannya pas banget! Design-nya timeless, bisa dipake bertahun-tahun."</p>
+                    <div class="mt-4 text-sm text-gray-500">Bandung</div>
+                </div>
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-rose-gold flex items-center justify-center text-white font-bold mr-4">RW</div>
+                        <div>
+                            <h4 class="font-bold">Rika W.</h4>
+                            <div class="flex">
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Packagingnya bagus, bahan sesuai ekspektasi. Pasti order warna lain!"</p>
+                    <div class="mt-4 text-sm text-gray-500">Medan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="py-16 bg-charcoal text-white fade-in">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold heading-font mb-4">Dapatkan Daster Lowo Premium Anda Sekarang</h2>
+                <div class="w-24 h-1 bg-rose-gold mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold heading-font mb-4">Pilihan Warna</h3>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="text-center">
+                                    <div class="w-full h-24 bg-gray-200 rounded-lg mb-2" style="background-color: #F5F5DC;"></div>
+                                    <span>Cream</span>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-full h-24 bg-gray-200 rounded-lg mb-2" style="background-color: #D4AF37;"></div>
+                                    <span>Rose Gold</span>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-full h-24 bg-gray-200 rounded-lg mb-2" style="background-color: #36454F;"></div>
+                                    <span>Charcoal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold heading-font mb-4">Panduan Ukuran</h3>
+                            <p class="mb-4">Pastikan Anda memilih ukuran yang tepat untuk kenyamanan maksimal.</p>
+                            <button onclick="openSizeGuide()" class="border-2 border-rose-gold text-rose-gold font-bold py-2 px-6 rounded-full transition duration-300 hover:bg-rose-gold hover:text-white">Lihat Panduan Ukuran</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold heading-font mb-6 text-center">Form Pemesanan</h3>
+                            <!-- OrderOnline Embed Code -->
+                            <div class="ooef">
+                                <form class="orderonline-embed-form" data-username="vita" data-product-slug="DasterMotifPita" data-product-id="689b46e3c60929df530b9d5e" id="oo-embed-form-DasterMotifPita-8218" data-origin="orderonline">
+                                    <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                                </form>
+                            </div>
+                            <script>
+                                if (typeof xLogError != 'function') {
+                                    var xLogError = function (error) {
+                                        var req = new XMLHttpRequest();
+                                        var payload = JSON.stringify({
+                                            url: document.location.href,
+                                            line: error.line,
+                                            stack: error.stack
+                                        });
+                                        var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                                        req.open('POST', 'https://api.orderonline.id/log', true);
+                                        req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                                        req.send(params);
+                                    };
+                                }
+                                try {
+                                    if (typeof xEmbedScript != 'function') {
+                                        var xEmbedScript = function () {
+                                            !function(w, d, e, v, id, t, s) {
+                                                if (d.getElementById(id)) return;
+                                                t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                                s = d.getElementsByTagName(e)[0];
+                                                s.parentNode.insertBefore(t, s);
+                                            }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                                        };
+                                    }
+                                    if (typeof xEmbedInit != 'function') {
+                                        var xEmbedInit = function (w, n) {
+                                            if (w.ooe) return;
+                                            n = w.ooe = function() {
+                                                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                            };
+                                            if (!w._ooe) w._ooe = n;
+                                            n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                                        };
+                                    }
+                                    xEmbedInit(window);
+                                    ooe('setup', 'redirect', 'https://vita.orderonline.id');
+                                    ooe('init', '5f1a8627a9bf8058b0424f32', '689b46e3c60929df530b9d5e', null, 'oo-embed-form-DasterMotifPita-8218', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+                                    if (!window.jQuery) {
+                                        !function(w, d, e, v, id, t, s) {
+                                            if (d.getElementById(id)) return;
+                                            t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                            t.addEventListener('load', xEmbedScript);
+                                            s = d.getElementsByTagName(e)[0];
+                                            s.parentNode.insertBefore(t, s);
+                                        }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                                    } else {
+                                        xEmbedScript();
+                                    }
+                                } catch (e) {
+                                    xLogError(e);
+                                    throw e;
+                                }
+                            </script>
+                            <!-- End OrderOnline Embed Code -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-2xl heading-font text-rose-gold font-bold mb-2">DasterLowo</div>
+                    <p class="text-sm">Premium Fashion for Indonesian Women</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-white hover:text-rose-gold transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-rose-gold transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-rose-gold transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-sm text-center">
+                <p>© 2023 DasterLowo Premium. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+</body>
+</html>
